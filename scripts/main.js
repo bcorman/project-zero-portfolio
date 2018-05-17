@@ -1,16 +1,24 @@
 // The elements on the landing page will be saved to an array of objects
 
-var landingPage = {
-  section: $('.landing-page'),
-  image: $('section img'),
-  h3: $('section h3'),
-  p: $('section p')
+var aboutPage = `<section class="about">
+                    <img src=images/prince-william.png>
+                    <h3>Ben Corman</h3>
+                    <p>This is the website of Ben Corman. This is a close approximation of what he looks like.</p>
+                </section>`
+
+var projectsPage = {
+
 }
 
-var aboutPage = {
 
-}
-
+// Nav Buttons
 $('#hello').on('click', function () {
-  landingPage.section.slideToggle(500);
+  $('main').slideToggle(500);
 });
+
+$('#about-button').on('click', function() {
+  $('main').html('');
+  $('main').hide(500);
+  $('main').append(aboutPage);
+  $('main').show(500);
+})
