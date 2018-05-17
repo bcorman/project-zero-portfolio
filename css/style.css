@@ -1,0 +1,69 @@
+/* Container is set up with CSS Grid, which I learned the basics of after reading a tutorial and MDN docs. Link to tutorial is available in readme file */
+
+/* I renamed the div class to master-grid as 'container' is used by bootstrap. 'container fluid' is also added to div as bootstrap makes it take up full width of container*/
+.master-grid{
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-columns: 2fr 4fr 3fr;
+  grid-template-areas:
+    "header nav nav"
+    "main main main"
+    "footer footer footer";
+  grid-gap: .75em;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* CSS Grid defines the basic layout of the site, but flexbox is used for elements within them */
+header{
+    grid-area: header;
+    background-color: teal;
+    /* opacity: .5; */
+    text-align: center;
+}
+nav{
+    grid-area: nav;
+    background-color: tomato;
+    /* opacity: .5; */
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+main{
+    grid-area: main;
+    /* background-color: lightblue; */
+    /* opacity: .5; */
+    background-image: url(../images/abstract-art-board.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+
+}
+
+footer{
+    grid-area: footer;
+    background-color: lightgreen;
+    /* opacity: .5; */
+}
+
+.fas {
+  display: none;
+}
+
+/* @media(max-width: 480px){
+  .container {
+    display: block;
+  }
+} */
