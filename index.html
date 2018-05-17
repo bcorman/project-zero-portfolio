@@ -10,29 +10,30 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <!-- JQuery and main.js -->
-    <script src="scripts/jquery-3.3.1.min.js" async defer></script>
-    <script src="scripts/main.js" async defer></script>
+    <script src="scripts/jquery-3.3.1.min.js" defer></script>
+    <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <div class="grid-wrap container-fluid">
-      <header>
-        <i class="fas fa-bars"></i>
-        <h2>Hello World</h2>
-      </header>
-      <nav>
+    <div class="container container-fluid">
+    <header>
+      <div class="left-header">
+        <h3 id="hello">Hello World</h3>
+      </div>
+      <nav class="top-nav">
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Quotes</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" id="about-button">About</a></li>
+          <li><a href="#" id="projects-button">Projects</a></li>
+          <li><a href="#" id= 'quotes-button'>Quotes</a></li>
+          <li><a href="#" id='contact=button'>Contact</a></li>
         </ul>
       </nav>
+    </header>
 
       <main>
-        <section class="bio">
-          <img src="images/prince-william.jpg" id="portrait" alt="prince william">
-          <h2>Ben Corman</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <section class="landing-page">
+          <img src=images/prince-william.png>
+          <h3>Ben Corman</h3>
+          <p>This is the website of Ben Corman. This is a close approximation of what he looks like.</p>
         </section>
       </main>
 
