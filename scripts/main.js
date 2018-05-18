@@ -1,24 +1,11 @@
-// The elements on the landing page will be saved to an array of objects
+// Animation for landing page text
 
-var aboutPage = `<section class="about">
-                    <img src=images/prince-william.png>
-                    <h3>Ben Corman</h3>
-                    <p>This is the website of Ben Corman. This is a close approximation of what he looks like.</p>
-                </section>`
+var landingPageText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
 
-var projectsPage = {
-
-}
-
-
-// Nav Buttons
-$('#hello').on('click', function () {
-  $('main').slideToggle(500);
-});
-
-$('#about-button').on('click', function() {
-  $('main').html('');
-  $('main').hide(500);
-  $('main').append(aboutPage);
-  $('main').show(500);
-})
+$('header').on('click', function () {
+  $('#landing-page p').setTimeout(function () {
+    for (var i = 0; i < landingPageText.length; i++) {
+      $('#landing-page p').delay(5000).append(landingPageText[i]);
+    }
+  }, 10);
+  });
