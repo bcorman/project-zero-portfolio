@@ -1,13 +1,93 @@
-.container{
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  line-height: 1.618em;
+  background-color: #CAFAFE;
+}
+
+/* .container{
   display: flex;
   flex-direction: column;
 
+} */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  background-color: #CAFAFE;
+  height: 90vh;
+  border: 1px solid black;
+
+}
+                                  /* Fonts */
+ /* p {
+   font-size: 1em;
+ } */
+/* Page Layouts */
+
+
+.left {
+  display: flex;
+  width: 54%;
+  /* border: 1px solid black; */
+  margin-right: 1%;
 }
 
-body {
-  font-family: 'Raleway', sans-serif;
+.right {
+  display: flex;
+  width: 44%;
+  /* border: 1px solid black; */
+  margin-left: 1%;
 }
 
+                               /* Landing Page */
+
+#landing-page {
+  display: flex;
+  flex-direction: row;
+  background-color: #55BCC9;
+}
+
+
+                              /* About Page */
+#about-page {
+  flex-direction: row;
+}
+#about-page img {
+  height: 80%;
+  width: 80%;
+  max-height: 400px;
+  min-width: 140px;
+  max-width: 320px;
+  margin: 10% auto;
+  border-radius: 40px;
+}
+
+#about-page p {
+  margin: 10%;
+  align-self: center;
+  width: 80%;
+  max-height: 80%;
+}
+                              /* Sticky Header */
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FC4445;
+  padding: 0 5%;
+
+}
+
+.nav {
+  margin-top: .5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  height: 100%;
+}
 
 a {
   text-decoration: none;
@@ -17,6 +97,25 @@ a {
 a:hover {
   color: lightgrey;
 }
+
+.fas {
+  display: none;
+}
+
+/* Carousel */
+#projects-page {
+  display: flex;
+  min-height: 400px;
+  max-height: 800px;
+}
+#projects-page .carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* #carouselExampleIndicators {
+
+} */
 
 /* @media(max-width: 720px) {
 
