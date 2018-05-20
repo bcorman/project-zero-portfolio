@@ -5,18 +5,13 @@ body {
   background-color: #CAFAFE;
 }
 
-/* .container{
-  display: flex;
-  flex-direction: column;
-
-} */
-
 .page {
   display: flex;
   flex-direction: column;
   background-color: #CAFAFE;
-  height: 90vh;
+  height: 100vh;
   border: 1px solid black;
+  margin-bottom: 2em;
 
 }
                                   /* Fonts */
@@ -76,7 +71,6 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: #FC4445;
-  padding: 0 5%;
 
 }
 
@@ -104,18 +98,17 @@ a:hover {
 
 /* Carousel */
 #projects-page {
-  display: flex;
   min-height: 400px;
   max-height: 800px;
+  justify-content: center;
+  align-items: center;
 }
 #projects-page .carousel {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* #carouselExampleIndicators {
 
-} */
 
 /* @media(max-width: 720px) {
 
