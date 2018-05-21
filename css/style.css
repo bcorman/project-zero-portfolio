@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   /* background-color: #CAFAFE; */
-  height: 100vh;
+  height: 80vh;
   border: 1px solid black;
   margin-bottom: 2em;
 
@@ -35,16 +35,10 @@ a {
   margin-left: 1%;
 }
 
-                               /* Landing Page */
-
-#landing-page {
-  justify-content: center;
-  align-items: center;
-}
-
 
                               /* About Page */
 #about-page {
+  margin-top: 4em;
   flex-direction: row;
 }
 #about-page img {
@@ -70,6 +64,11 @@ a {
   align-items: center;
 }
 
+#projects-page h2 {
+  padding-bottom: 0.25em;
+  border-bottom: 3px solid black;
+}
+
 .items {
   padding: 1.25em 1.25em 0;
   display: flex;
@@ -88,6 +87,19 @@ a {
 #expanded {
 
 }
+
+                              /* Testimonials */
+
+#quotes-page {
+  height: 30vh;
+  background-color: turquoise;
+  align-items: center;
+}
+
+#quotes-page h2 {
+  border-bottom: 3px solid black;
+}
+
                               /* Contact Page */
 #contacts-page {
   justify-content: center;
@@ -140,6 +152,7 @@ a:hover {
 
 /* Carousel */
 .carousel {
+  margin-top: 1em;
   width: 90%;
   display: flex;
   justify-content: center;
