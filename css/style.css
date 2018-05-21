@@ -2,22 +2,22 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
   line-height: 1.618em;
-  background-color: #CAFAFE;
+  background-color: #FFFFF4;
 }
 
 .page {
   display: flex;
   flex-direction: column;
-  background-color: #CAFAFE;
+  /* background-color: #CAFAFE; */
   height: 100vh;
   border: 1px solid black;
   margin-bottom: 2em;
 
 }
                                   /* Fonts */
- /* p {
-   font-size: 1em;
- } */
+a {
+  font-family: 'Raleway', sans-serif;
+}
 /* Page Layouts */
 
 
@@ -38,9 +38,8 @@ body {
                                /* Landing Page */
 
 #landing-page {
-  display: flex;
-  flex-direction: row;
-  background-color: #55BCC9;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -64,6 +63,48 @@ body {
   width: 80%;
   max-height: 80%;
 }
+
+                              /* Projects Page */
+#projects-page {
+  justify-content: center;
+  align-items: center;
+}
+
+.items {
+  padding: 1.25em 1.25em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.items > p {
+  margin-top: 0.25em;
+}
+.items:hover {
+  border: 1px dotted black;
+  opacity: 0.5;
+}
+
+#expanded {
+
+}
+                              /* Contact Page */
+#contacts-page {
+  justify-content: center;
+  align-items: center;
+}
+
+.pre-click {
+ border: 1px solid black;
+ padding: 2em 3em;
+ border-radius: 4em;
+}
+
+.pre-click:hover {
+  opacity: 0.5;
+  border: 1px dotted black;
+}
+
                               /* Sticky Header */
 
 
@@ -90,6 +131,7 @@ a {
 
 a:hover {
   color: lightgrey;
+  text-decoration: none;
 }
 
 .fas {
@@ -97,19 +139,39 @@ a:hover {
 }
 
 /* Carousel */
-#projects-page {
-  min-height: 400px;
-  max-height: 800px;
-  justify-content: center;
-  align-items: center;
-}
-#projects-page .carousel {
+.carousel {
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1em;
 }
 
+.carousel-item {
+  max-height: 400px;
+  max-width: 800px;
+}
 
+/* Footer */
+footer {
+  background-color: #FC4445;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons {
+  font-size: 1.66em;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin-right: 20%;
+}
+
+.copy {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: .75em;
+}
 /* @media(max-width: 720px) {
 
 } */
