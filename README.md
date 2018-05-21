@@ -10,6 +10,6 @@ Carousel and sticky header are handled by Bootstrap.
 
 Difficulties thus far:
 
-Aside from the constant tweaking of flexbox properties, by far the most difficult aspect of this projects has been working without a mockup, and relying on my own (undeveloped) sense of graphic design to fill the pages with content. Eventually, I found it easier to just use placeholder text and images.
+Aside from the constant tweaking of flexbox properties, by far the most difficult aspect of this projects has been settling on a design. At the project's start, I opted for designing my own layout, especially as I saw some great original ideas being tried out by classmates. As the project progressed, however, I found this more difficult, and ended up scrapping what I had and moving towards a design closer to the mockup provided.
 
-As my portfolio and web development skillset grows, I will have content to put on this site, but at this time, it does feel a bit like putting the cart before the horse.
+As my portfolio and web development skillset grows, I will have content to put on this site, and add features and functionality.

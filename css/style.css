@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   /* background-color: #CAFAFE; */
   height: 80vh;
-  border: 1px solid black;
+  border: 3px solid #4CBB17;
   margin-bottom: 2em;
 
 }
@@ -92,7 +92,7 @@ a {
 
 #quotes-page {
   height: 30vh;
-  background-color: turquoise;
+  background-color: #4CBB17;
   align-items: center;
 }
 
@@ -102,21 +102,53 @@ a {
 
                               /* Contact Page */
 #contacts-page {
-  justify-content: center;
   align-items: center;
 }
 
-.pre-click {
- border: 1px solid black;
- padding: 2em 3em;
- border-radius: 4em;
+#contact {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
-.pre-click:hover {
-  opacity: 0.5;
-  border: 1px dotted black;
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+form h5, form input, textarea {
+  width: 100%;
+  margin: 0.25em 0;
+}
+
+form h5 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+textarea {
+  height: 6em;
+  resize: none;
+}
+
+form button {
+  background-color: #4CBB17;
+  margin-top: 0.25em;
+  width: 60%;
+  border-radius: 40px;
+}
+
+#contact h3 {
+  text-align: center;
+  border-bottom: 3px solid black;
+  margin: 1em 0;
+}
+
+form h5 {
+  font-size: 1em;
+}
                               /* Sticky Header */
 
 
